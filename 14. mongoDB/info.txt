@@ -1,0 +1,9 @@
+Architecture of MongoDB----
+
+
+1. Collections ------(example- Users,Post,Address)
+         Document1
+         Document2
+         Document3
+         ..
+         
