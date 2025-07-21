@@ -1,0 +1,8 @@
+Architecture :---
+
+
+schema ----- defines structure
+
+      schema --- make model
+
+      model --- CRUD operations
