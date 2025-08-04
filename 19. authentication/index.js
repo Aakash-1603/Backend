@@ -11,9 +11,9 @@ const userRoute = require("./routes/user");
 const URL = require("./models/url");
 const path = require("path");
 
-const cookiePrser=require("cookie-parser");
+const cookiePrser = require("cookie-parser");
 
-const {restrictToLoggedinUserOnly} =require("./middleware/auth");
+const { restrictToLoggedinUserOnly } = require("./middleware/auth");
 
 const app = express();
 const PORT = 5000;
@@ -29,7 +29,7 @@ app.use(cookiePrser());
 app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"));
 
-app.use("/url",restrictToLoggedinUserOnly, urlRoute);
+app.use("/url", restrictToLoggedinUserOnly, urlRoute);
 app.use("/", newRoute);
 app.use("/user", userRoute);
 
